@@ -1,5 +1,8 @@
 {
+  "name": "scrollable-component-test",
+  "version": "0.0.0",
+  "private": true,
   "dependencies": {
-    "scrollable-component": "^1.1.1"
+    "scrollable-component": "^1.1.2"
   }
 }
