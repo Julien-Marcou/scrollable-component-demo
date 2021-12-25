@@ -1,9 +1,15 @@
 .main-title {
-  text-align: center;
+  display: flex;
+  align-items: center;
   max-width: 1350px;
   padding: 0 30px;
   margin: 30px auto;
   font-size: 2.1rem;
+}
+.logo {
+  width: 2.2rem;
+  height: auto;
+  margin-left: 20px;
 }
 
 .native-vs-custom {
@@ -15,9 +21,19 @@
   padding: 0 30px;
   margin: 0 auto;
 }
-@media (max-width: 700px) {
+.native-vs-custom h2 {
+  grid-column: span 2;
+  margin: 15px 0 0;
+}
+@media (max-width: 600px) {
   .native-vs-custom {
     display: block;
+  }
+  .native-vs-custom h2 {
+    margin-bottom: 20px;
+  }
+  .native, .custom, .scale-test, .absolute-test {
+    margin-bottom: 30px;
   }
 }
 
@@ -86,14 +102,16 @@
 }
 
 .vertical-carousel-test {
-  max-height: 300px;
+  max-height: 500px;
   background: transparent;
 }
 .vertical-carousel-test.native {
   padding: 1.5rem;
+  scroll-snap-type: y mandatory;
 }
 .vertical-carousel-test.custom {
   --content-padding: 1.5rem;
+  --viewport-scroll-snap-type: y mandatory;
 }
 .vertical-carousel-track {
   display: grid;
@@ -101,11 +119,12 @@
   grid-gap: 1.5rem;
 }
 .vertical-carousel-item {
+  scroll-snap-align: center;
   width: 100%;
-  height: 200px;
+  height: 400px;
   background-color: #f9f8f7;
   font-size: 1.5rem;
-  line-height: 200px;
+  line-height: 400px;
   text-align: center;
 }
 
@@ -170,7 +189,7 @@
   height: 200px;
 }
 .centered-content {
-  min-width: 300px;
+  min-width: 320px;
   width: 50%;
   height: 100%;
   margin: auto;

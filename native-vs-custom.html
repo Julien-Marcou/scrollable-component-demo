@@ -17,13 +17,16 @@
 
   <h1 class="main-title">
     Native vs Custom
+    <img class="logo" src="/img/favicon.svg" alt="">
   </h1>
 
   <div class="native-vs-custom">
 
+    <h2>CSS scaled</h2>
+
     <div class="scale-test">
       <div class="scale-viewport native">
-        <button>Button</button>
+        <p><button>Button</button></p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
@@ -41,7 +44,7 @@
 
     <div class="scale-test">
       <scrollable-component class="scale-viewport custom" scrollbar-visibility="always">
-        <button>Button</button>
+        <p><button>Button</button></p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
@@ -56,6 +59,8 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
       </scrollable-component>
     </div>
+
+    <h2>Horizontal scrolling</h2>
 
     <div class="carousel-test native">
       <div class="carousel-track">
@@ -83,6 +88,8 @@
       </div>
     </scrollable-component>
 
+    <h2>Vertical scroll snapping</h2>
+
     <div class="vertical-carousel-test native">
       <div class="vertical-carousel-track">
         <div class="vertical-carousel-item">One</div>
@@ -102,6 +109,8 @@
         <div class="vertical-carousel-item">Five</div>
       </div>
     </scrollable-component>
+
+    <h2>Both scrollbar</h2>
 
     <div class="data-table-test native">
       <div class="data-table-content">
@@ -353,6 +362,8 @@
       </div>
     </scrollable-component>
 
+    <h2>Overflow hidden</h2>
+
     <div class="overflow-test native">
       <p>A_very_long_text_that_need_to_be_truncated_instead_of_causing_horizontal_scrollbar_to_be_visible__A_very_long_text_that_need_to_be_truncated_instead_of_causing_horizontal_scrollbar_to_be_visible_<a href="#">link</a></p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
@@ -388,6 +399,8 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
       <p>A_very_long_text_that_need_to_be_truncated_instead_of_causing_horizontal_scrollbar_to_be_visible</p>
     </scrollable-component>
+
+    <h2>Text ellipsis</h2>
 
     <div class="text-ellipsis-test native">
       <p>A_very_long_text_that_need_to_be_truncated_instead_of_causing_horizontal_scrollbar_to_be_visible__A_very_long_text_that_need_to_be_truncated_instead_of_causing_horizontal_scrollbar_to_be_visible</p>
@@ -425,10 +438,12 @@
       <p>A_very_long_text_that_need_to_be_truncated_instead_of_causing_horizontal_scrollbar_to_be_visible</p>
     </scrollable-component>
 
+    <h2>Size relative to parent</h2>
+
     <div class="centered-test native">
       <div class="centered-content">
         <p>Should take 50% of the parent's width & 100% of the parent's height</p>
-        <p>(min-width of 300px then horizontall scrolling)</p>
+        <p>(min-width of 320px then horizontall scrolling)</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
@@ -439,13 +454,15 @@
     <scrollable-component class="centered-test custom" scrollbar-visibility="always">
       <div class="centered-content">
         <p>Should take 50% of the parent's width & 100% of the parent's height</p>
-        <p>(min-width of 300px then horizontall scrolling)</p>
+        <p>(min-width of 320px then horizontall scrolling)</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
       </div>
     </scrollable-component>
+
+    <h2>Absolute positioning</h2>
 
     <div class="absolute-test">
       <div class="absolute-viewport native">
@@ -480,6 +497,8 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
       </scrollable-component>
     </div>
+
+    <h2>Sticky element</h2>
 
     <div class="emoji-test native">
       <div class="emoji-group">
