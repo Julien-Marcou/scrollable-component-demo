@@ -1,9 +1,12 @@
+body {
+  padding-top: 30px;
+}
 .main-title {
   display: flex;
   align-items: center;
-  max-width: 1350px;
+  max-width: 1410px;
   padding: 0 30px;
-  margin: 30px auto;
+  margin: 0 auto 30px;
   font-size: 2.1rem;
 }
 .logo {
@@ -14,12 +17,12 @@
 
 .native-vs-custom {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: flex-start;
+  grid-template-columns: repeat(2, minmax(0, 660px));
   grid-gap: 30px;
-  max-width: 1350px;
   padding: 0 30px;
   margin: 0 auto;
+  align-items: flex-start;
+  justify-content: center;
 }
 .native-vs-custom h2 {
   grid-column: span 2;
@@ -45,12 +48,11 @@
   padding: 10px;
 }
 
-.native {
-  overflow: auto;
-}
 .native, .custom {
   background-color: #f9f8f7;
   border: 1px solid #999;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 @keyframes show {
@@ -80,6 +82,8 @@
 
 .carousel-test {
   background: transparent;
+  overflow-y: hidden;
+  overflow-x: auto;
 }
 .carousel-test.native {
   padding: 1.5rem;
@@ -104,14 +108,13 @@
 .vertical-carousel-test {
   max-height: 500px;
   background: transparent;
+  scroll-snap-type: y mandatory;
 }
 .vertical-carousel-test.native {
   padding: 1.5rem;
-  scroll-snap-type: y mandatory;
 }
 .vertical-carousel-test.custom {
   --content-padding: 1.5rem;
-  --viewport-scroll-snap-type: y mandatory;
 }
 .vertical-carousel-track {
   display: grid;
@@ -130,6 +133,7 @@
 
 .data-table-test {
   max-height: 300px;
+  overflow: auto;
 }
 .data-table-content {
   display: grid;
@@ -162,11 +166,9 @@
 }
 .overflow-test.native {
   padding: 1.5rem;
-  overflow-x: hidden;
 }
 .overflow-test.custom {
   --content-padding: 1.5rem;
-  --viewport-overflow-x: hidden;
 }
 
 .text-ellipsis-test {
@@ -174,11 +176,9 @@
 }
 .text-ellipsis-test.native {
   padding: 1.5rem;
-  overflow-x: hidden;
 }
 .text-ellipsis-test.custom {
   --content-padding: 1.5rem;
-  --viewport-overflow-x: hidden;
 }
 .text-ellipsis-test p {
   overflow: hidden;
@@ -219,21 +219,14 @@
 }
 .absolute-viewport .fixed-width {
   width: 400px;
-  background-color: #aacccc;
+  background-color: #ddd;
   margin: 0 auto 30px;
 }
 
 .nested-test {
-  background-color: #999;
+  background-color: #eee;
   margin-bottom: 30px;
-}
-.nested-test.native {
   overflow-x: auto;
-  overflow-y: hidden;
-}
-.nested-test.custom {
-  --viewport-overflow-x: auto;
-  --viewport-overflow-y: hidden;
 }
 .nested-content {
   width: 600px;
@@ -246,9 +239,6 @@
   border-radius: 8px;
   border: 1px solid #ddd;
   box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.05);
-}
-.emoji-test::part(viewport) {
-  min-height: calc(2.6rem * 12 + 1.6rem * 1.15 + 36px + 0.5rem);
 }
 .emoji-group .title {
   font-size: 1.6rem;

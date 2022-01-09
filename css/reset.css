@@ -104,3 +104,7 @@ figure, blockquote {
 [hidden] {
   display: none !important;
 }
+
+scrollable-component {
+  display: block;
+}
