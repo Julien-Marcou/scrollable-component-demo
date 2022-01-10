@@ -187,18 +187,20 @@ body {
 
 .centered-test {
   height: 200px;
+  overflow-x: auto;
 }
 .centered-content {
   min-width: 320px;
   width: 50%;
   height: 100%;
   margin: auto;
+  padding: 1rem;
   background: #bbb;
 }
 
 .absolute-test {
   position: relative;
-  height: 300px;
+  height: 350px;
   width: 100%;
   border: 1px solid #999;
 }
@@ -221,6 +223,7 @@ body {
   width: 400px;
   background-color: #ddd;
   margin: 0 auto 30px;
+  padding: 1rem;
 }
 
 .nested-test {
@@ -229,8 +232,9 @@ body {
   overflow-x: auto;
 }
 .nested-content {
-  width: 600px;
-  height: 100px;
+  width: 750px;
+  height: 80px;
+  padding: 1rem;
 }
 
 .emoji-test {
