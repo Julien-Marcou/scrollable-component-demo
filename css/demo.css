@@ -128,17 +128,17 @@ scrollable-component {
     0 0 10px -12px rgba(0, 0, 0, 0) inset;
   transition: box-shadow 200ms ease-in;
 }
-.edge-detection.top-overflow {
+.edge-detection[top-overflow] {
   box-shadow:
     0 14px 10px -12px rgba(0, 0, 0, 0.6) inset,
     0 0 10px -12px rgba(0, 0, 0, 0) inset;
 }
-.edge-detection.bottom-overflow {
+.edge-detection[bottom-overflow] {
   box-shadow:
     0 0 10px -12px rgba(0, 0, 0, 0) inset,
     0 -14px 10px -12px rgba(0, 0, 0, 0.6) inset;
 }
-.edge-detection.top-overflow.bottom-overflow {
+.edge-detection[top-overflow][bottom-overflow] {
   box-shadow:
     0 14px 10px -12px rgba(0, 0, 0, 0.6) inset,
     0 -14px 10px -12px rgba(0, 0, 0, 0.6) inset;
@@ -152,8 +152,8 @@ scrollable-component {
   height: 0;
   text-align: center;
 }
-.edge-detection.top-overflow .top-wrapper,
-.edge-detection.bottom-overflow .bottom-wrapper {
+.edge-detection[top-overflow] .top-wrapper,
+.edge-detection[bottom-overflow] .bottom-wrapper {
   opacity: 1;
   pointer-events: initial;
 }
@@ -434,11 +434,11 @@ scrollable-component {
   background-image: url(/img/cat.gif);
   transform: rotate(180deg) translateY(-100%);
 }
-.custom-11.top-overflow::part(scrollbar-thumb):before {
+.custom-11[top-overflow]::part(scrollbar-thumb):before {
   opacity: 1;
   transform: translateY(0);
 }
-.custom-11.bottom-overflow::part(scrollbar-thumb):after {
+.custom-11[bottom-overflow]::part(scrollbar-thumb):after {
   opacity: 1;
   transform: rotate(180deg) translateY(0);
 }
