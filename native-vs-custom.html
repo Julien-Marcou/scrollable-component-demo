@@ -11,7 +11,17 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/native-vs-custom.css">
-  <script type="module" src="/node_modules/scrollable-component/index.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "scrollable-component": "/node_modules/scrollable-component/index.js"
+      }
+    }
+  </script>
+  <script type="module">
+    import { defineScrollableComponent } from 'scrollable-component';
+    defineScrollableComponent();
+  </script>
 </head>
 <body>
 

@@ -6,7 +6,7 @@
     "serve": "http-server --port 4200 -c-1"
   },
   "dependencies": {
-    "scrollable-component": "^2.0.0-next.0"
+    "scrollable-component": "^2.0.0-next.1"
   },
   "devDependencies": {
     "http-server": "^14.1.1"
