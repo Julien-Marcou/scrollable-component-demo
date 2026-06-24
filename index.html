@@ -51,7 +51,7 @@
       </scrollable-component>
 
       <h2>Horizontal</h2>
-      <scrollable-component class="carousel">
+      <scrollable-component class="carousel" scrollbar-overlay="false" scrollbar-visibility="trackbar">
         <div class="carousel-track">
           <div class="carousel-item">One</div>
           <div class="carousel-item">Two</div>
@@ -60,12 +60,12 @@
           <div class="carousel-item">Five</div>
           <div class="carousel-item">Six</div>
           <div class="carousel-item">Seven</div>
-          <div class="carousel-item">Height</div>
+          <div class="carousel-item">Eight</div>
         </div>
       </scrollable-component>
 
       <h2>Both scrollbars</h2>
-      <scrollable-component class="data-table">
+      <scrollable-component class="data-table" >
         <div class="data-table-content">
           <div class="data-table-row data-table-header">
             <div class="data-table-cell">Column 1</div>
@@ -1389,7 +1389,7 @@
       </scrollable-component>
 
       <h2>Scroll snapping</h2>
-      <scrollable-component class="carousel-with-snapping">
+      <scrollable-component class="carousel-with-snapping" scrollbar-overlay="false">
         <div class="carousel-with-snapping-track">
           <div class="carousel-with-snapping-item">One</div>
           <div class="carousel-with-snapping-item">Two</div>
@@ -1400,7 +1400,7 @@
       </scrollable-component>
 
       <h2>Left scrollbar</h2>
-      <scrollable-component class="default inverted-scrollbar" vertical-scrollbar-position="left">
+      <scrollable-component class="default" vertical-scrollbar-position="left">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
@@ -1416,7 +1416,7 @@
       </scrollable-component>
 
       <h2>Top scrollbar</h2>
-      <scrollable-component class="carousel inverted-scrollbar" horizontal-scrollbar-position="top">
+      <scrollable-component class="carousel top-scrollbar" scrollbar-overlay="false" horizontal-scrollbar-position="top" scrollbar-visibility="trackbar">
         <div class="carousel-track">
           <div class="carousel-item">One</div>
           <div class="carousel-item">Two</div>
@@ -1425,7 +1425,7 @@
           <div class="carousel-item">Five</div>
           <div class="carousel-item">Six</div>
           <div class="carousel-item">Seven</div>
-          <div class="carousel-item">Height</div>
+          <div class="carousel-item">Eight</div>
         </div>
       </scrollable-component>
 
@@ -1643,6 +1643,324 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
       </scrollable-component>
+    </div>
+
+    <div class="multiple-scrollbar-examples">
+
+      <h2>Left & right scrollbars</h2>
+      <div class="example">
+        <scrollable-component class="default" vertical-scrollbar-position="both">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+        </scrollable-component>
+
+        <scrollable-component class="default custom-12" vertical-scrollbar-position="both" scrollbar-visibility="always">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias voluptate voluptatum veniam, consectetur iste sapiente provident ad quidem quod rerum ullam sed atque aperiam quibusdam odit earum eum harum.</p>
+        </scrollable-component>
+      </div>
+
+      <h2>Top & bottom scrollbars</h2>
+      <div class="example">
+        <scrollable-component class="carousel both-scrollbars" scrollbar-overlay="false" horizontal-scrollbar-position="both" scrollbar-visibility="trackbar">
+          <div class="carousel-track">
+            <div class="carousel-item">One</div>
+            <div class="carousel-item">Two</div>
+            <div class="carousel-item">Three</div>
+            <div class="carousel-item">Four</div>
+            <div class="carousel-item">Five</div>
+            <div class="carousel-item">Six</div>
+            <div class="carousel-item">Seven</div>
+            <div class="carousel-item">Eight</div>
+          </div>
+        </scrollable-component>
+
+        <scrollable-component class="carousel both-scrollbars custom-13" scrollbar-overlay="false" horizontal-scrollbar-position="both" scrollbar-visibility="always">
+          <div class="carousel-track">
+            <div class="carousel-item">One</div>
+            <div class="carousel-item">Two</div>
+            <div class="carousel-item">Three</div>
+            <div class="carousel-item">Four</div>
+            <div class="carousel-item">Five</div>
+            <div class="carousel-item">Six</div>
+            <div class="carousel-item">Seven</div>
+            <div class="carousel-item">Eight</div>
+          </div>
+        </scrollable-component>
+      </div>
+
+      <h2>All-side scrollbars</h2>
+      <div class="example">
+        <scrollable-component class="data-table" horizontal-scrollbar-position="both" vertical-scrollbar-position="both">
+          <div class="data-table-content">
+            <div class="data-table-row data-table-header">
+              <div class="data-table-cell">Column 1</div>
+              <div class="data-table-cell">Column 2</div>
+              <div class="data-table-cell">Column 3</div>
+              <div class="data-table-cell">Column 4</div>
+              <div class="data-table-cell">Column 5</div>
+              <div class="data-table-cell">Column 6</div>
+              <div class="data-table-cell">Column 7</div>
+              <div class="data-table-cell">Column 8</div>
+              <div class="data-table-cell">Column 9</div>
+              <div class="data-table-cell">Column 10</div>
+            </div>
+            <div class="data-table-row">
+              <div class="data-table-cell">Value 1</div>
+              <div class="data-table-cell">Value 2</div>
+              <div class="data-table-cell">Value 3</div>
+              <div class="data-table-cell">Value 4</div>
+              <div class="data-table-cell">Value 5</div>
+              <div class="data-table-cell">Value 6</div>
+              <div class="data-table-cell">Value 7</div>
+              <div class="data-table-cell">Value 8</div>
+              <div class="data-table-cell">Value 9</div>
+              <div class="data-table-cell">Value 10</div>
+            </div>
+            <div class="data-table-row">
+              <div class="data-table-cell">Value 1</div>
+              <div class="data-table-cell">Value 2</div>
+              <div class="data-table-cell">Value 3</div>
+              <div class="data-table-cell">Value 4</div>
+              <div class="data-table-cell">Value 5</div>
+              <div class="data-table-cell">Value 6</div>
+              <div class="data-table-cell">Value 7</div>
+              <div class="data-table-cell">Value 8</div>
+              <div class="data-table-cell">Value 9</div>
+              <div class="data-table-cell">Value 10</div>
+            </div>
+            <div class="data-table-row">
+              <div class="data-table-cell">Value 1</div>
+              <div class="data-table-cell">Value 2</div>
+              <div class="data-table-cell">Value 3</div>
+              <div class="data-table-cell">Value 4</div>
+              <div class="data-table-cell">Value 5</div>
+              <div class="data-table-cell">Value 6</div>
+              <div class="data-table-cell">Value 7</div>
+              <div class="data-table-cell">Value 8</div>
+              <div class="data-table-cell">Value 9</div>
+              <div class="data-table-cell">Value 10</div>
+            </div>
+            <div class="data-table-row">
+              <div class="data-table-cell">Value 1</div>
+              <div class="data-table-cell">Value 2</div>
+              <div class="data-table-cell">Value 3</div>
+              <div class="data-table-cell">Value 4</div>
+              <div class="data-table-cell">Value 5</div>
+              <div class="data-table-cell">Value 6</div>
+              <div class="data-table-cell">Value 7</div>
+              <div class="data-table-cell">Value 8</div>
+              <div class="data-table-cell">Value 9</div>
+              <div class="data-table-cell">Value 10</div>
+            </div>
+            <div class="data-table-row">
+              <div class="data-table-cell">Value 1</div>
+              <div class="data-table-cell">Value 2</div>
+              <div class="data-table-cell">Value 3</div>
+              <div class="data-table-cell">Value 4</div>
+              <div class="data-table-cell">Value 5</div>
+              <div class="data-table-cell">Value 6</div>
+              <div class="data-table-cell">Value 7</div>
+              <div class="data-table-cell">Value 8</div>
+              <div class="data-table-cell">Value 9</div>
+              <div class="data-table-cell">Value 10</div>
+            </div>
+            <div class="data-table-row">
+              <div class="data-table-cell">Value 1</div>
+              <div class="data-table-cell">Value 2</div>
+              <div class="data-table-cell">Value 3</div>
+              <div class="data-table-cell">Value 4</div>
+              <div class="data-table-cell">Value 5</div>
+              <div class="data-table-cell">Value 6</div>
+              <div class="data-table-cell">Value 7</div>
+              <div class="data-table-cell">Value 8</div>
+              <div class="data-table-cell">Value 9</div>
+              <div class="data-table-cell">Value 10</div>
+            </div>
+            <div class="data-table-row">
+              <div class="data-table-cell">Value 1</div>
+              <div class="data-table-cell">Value 2</div>
+              <div class="data-table-cell">Value 3</div>
+              <div class="data-table-cell">Value 4</div>
+              <div class="data-table-cell">Value 5</div>
+              <div class="data-table-cell">Value 6</div>
+              <div class="data-table-cell">Value 7</div>
+              <div class="data-table-cell">Value 8</div>
+              <div class="data-table-cell">Value 9</div>
+              <div class="data-table-cell">Value 10</div>
+            </div>
+            <div class="data-table-row">
+              <div class="data-table-cell">Value 1</div>
+              <div class="data-table-cell">Value 2</div>
+              <div class="data-table-cell">Value 3</div>
+              <div class="data-table-cell">Value 4</div>
+              <div class="data-table-cell">Value 5</div>
+              <div class="data-table-cell">Value 6</div>
+              <div class="data-table-cell">Value 7</div>
+              <div class="data-table-cell">Value 8</div>
+              <div class="data-table-cell">Value 9</div>
+              <div class="data-table-cell">Value 10</div>
+            </div>
+            <div class="data-table-row">
+              <div class="data-table-cell">Value 1</div>
+              <div class="data-table-cell">Value 2</div>
+              <div class="data-table-cell">Value 3</div>
+              <div class="data-table-cell">Value 4</div>
+              <div class="data-table-cell">Value 5</div>
+              <div class="data-table-cell">Value 6</div>
+              <div class="data-table-cell">Value 7</div>
+              <div class="data-table-cell">Value 8</div>
+              <div class="data-table-cell">Value 9</div>
+              <div class="data-table-cell">Value 10</div>
+            </div>
+          </div>
+        </scrollable-component>
+
+        <scrollable-component class="data-table custom-14" horizontal-scrollbar-position="both" vertical-scrollbar-position="both" scrollbar-visibility="always" scrollbar-overlay="false">
+          <div class="data-table-content">
+            <div class="data-table-row data-table-header">
+              <div class="data-table-cell">Column 1</div>
+              <div class="data-table-cell">Column 2</div>
+              <div class="data-table-cell">Column 3</div>
+              <div class="data-table-cell">Column 4</div>
+              <div class="data-table-cell">Column 5</div>
+              <div class="data-table-cell">Column 6</div>
+              <div class="data-table-cell">Column 7</div>
+              <div class="data-table-cell">Column 8</div>
+              <div class="data-table-cell">Column 9</div>
+              <div class="data-table-cell">Column 10</div>
+            </div>
+            <div class="data-table-row">
+              <div class="data-table-cell">Value 1</div>
+              <div class="data-table-cell">Value 2</div>
+              <div class="data-table-cell">Value 3</div>
+              <div class="data-table-cell">Value 4</div>
+              <div class="data-table-cell">Value 5</div>
+              <div class="data-table-cell">Value 6</div>
+              <div class="data-table-cell">Value 7</div>
+              <div class="data-table-cell">Value 8</div>
+              <div class="data-table-cell">Value 9</div>
+              <div class="data-table-cell">Value 10</div>
+            </div>
+            <div class="data-table-row">
+              <div class="data-table-cell">Value 1</div>
+              <div class="data-table-cell">Value 2</div>
+              <div class="data-table-cell">Value 3</div>
+              <div class="data-table-cell">Value 4</div>
+              <div class="data-table-cell">Value 5</div>
+              <div class="data-table-cell">Value 6</div>
+              <div class="data-table-cell">Value 7</div>
+              <div class="data-table-cell">Value 8</div>
+              <div class="data-table-cell">Value 9</div>
+              <div class="data-table-cell">Value 10</div>
+            </div>
+            <div class="data-table-row">
+              <div class="data-table-cell">Value 1</div>
+              <div class="data-table-cell">Value 2</div>
+              <div class="data-table-cell">Value 3</div>
+              <div class="data-table-cell">Value 4</div>
+              <div class="data-table-cell">Value 5</div>
+              <div class="data-table-cell">Value 6</div>
+              <div class="data-table-cell">Value 7</div>
+              <div class="data-table-cell">Value 8</div>
+              <div class="data-table-cell">Value 9</div>
+              <div class="data-table-cell">Value 10</div>
+            </div>
+            <div class="data-table-row">
+              <div class="data-table-cell">Value 1</div>
+              <div class="data-table-cell">Value 2</div>
+              <div class="data-table-cell">Value 3</div>
+              <div class="data-table-cell">Value 4</div>
+              <div class="data-table-cell">Value 5</div>
+              <div class="data-table-cell">Value 6</div>
+              <div class="data-table-cell">Value 7</div>
+              <div class="data-table-cell">Value 8</div>
+              <div class="data-table-cell">Value 9</div>
+              <div class="data-table-cell">Value 10</div>
+            </div>
+            <div class="data-table-row">
+              <div class="data-table-cell">Value 1</div>
+              <div class="data-table-cell">Value 2</div>
+              <div class="data-table-cell">Value 3</div>
+              <div class="data-table-cell">Value 4</div>
+              <div class="data-table-cell">Value 5</div>
+              <div class="data-table-cell">Value 6</div>
+              <div class="data-table-cell">Value 7</div>
+              <div class="data-table-cell">Value 8</div>
+              <div class="data-table-cell">Value 9</div>
+              <div class="data-table-cell">Value 10</div>
+            </div>
+            <div class="data-table-row">
+              <div class="data-table-cell">Value 1</div>
+              <div class="data-table-cell">Value 2</div>
+              <div class="data-table-cell">Value 3</div>
+              <div class="data-table-cell">Value 4</div>
+              <div class="data-table-cell">Value 5</div>
+              <div class="data-table-cell">Value 6</div>
+              <div class="data-table-cell">Value 7</div>
+              <div class="data-table-cell">Value 8</div>
+              <div class="data-table-cell">Value 9</div>
+              <div class="data-table-cell">Value 10</div>
+            </div>
+            <div class="data-table-row">
+              <div class="data-table-cell">Value 1</div>
+              <div class="data-table-cell">Value 2</div>
+              <div class="data-table-cell">Value 3</div>
+              <div class="data-table-cell">Value 4</div>
+              <div class="data-table-cell">Value 5</div>
+              <div class="data-table-cell">Value 6</div>
+              <div class="data-table-cell">Value 7</div>
+              <div class="data-table-cell">Value 8</div>
+              <div class="data-table-cell">Value 9</div>
+              <div class="data-table-cell">Value 10</div>
+            </div>
+            <div class="data-table-row">
+              <div class="data-table-cell">Value 1</div>
+              <div class="data-table-cell">Value 2</div>
+              <div class="data-table-cell">Value 3</div>
+              <div class="data-table-cell">Value 4</div>
+              <div class="data-table-cell">Value 5</div>
+              <div class="data-table-cell">Value 6</div>
+              <div class="data-table-cell">Value 7</div>
+              <div class="data-table-cell">Value 8</div>
+              <div class="data-table-cell">Value 9</div>
+              <div class="data-table-cell">Value 10</div>
+            </div>
+            <div class="data-table-row">
+              <div class="data-table-cell">Value 1</div>
+              <div class="data-table-cell">Value 2</div>
+              <div class="data-table-cell">Value 3</div>
+              <div class="data-table-cell">Value 4</div>
+              <div class="data-table-cell">Value 5</div>
+              <div class="data-table-cell">Value 6</div>
+              <div class="data-table-cell">Value 7</div>
+              <div class="data-table-cell">Value 8</div>
+              <div class="data-table-cell">Value 9</div>
+              <div class="data-table-cell">Value 10</div>
+            </div>
+          </div>
+        </scrollable-component>
+      </div>
 
     </div>
 

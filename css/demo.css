@@ -23,7 +23,7 @@ body {
   margin: 0 auto;
   justify-content: center;
 }
-@media (max-width: 1000px) {
+@media (max-width: 960px) {
   .examples {
     display: block;
   }
@@ -47,7 +47,7 @@ scrollable-component {
 .default {
   --content-padding: 25px 35px;
   max-height: 300px;
-  background-color: #f9f8f7;
+  background-color: #f3f2f1;
   border-radius: 8px;
 }
 .default p {
@@ -62,14 +62,19 @@ scrollable-component {
 .carousel {
   --scrollbar-padding: 0;
   --scrollbar-width: 12px;
-  --content-padding: 0 0 25px 0;
-  background: linear-gradient(to top, #f9f8f7 12px, transparent 12px);
+  --content-padding: 0 0 15px 0;
   overflow-y: hidden;
   overflow-x: auto;
 }
-.carousel.inverted-scrollbar {
-  --content-padding: 25px 0 0 0;
-  background: linear-gradient(to bottom, #f9f8f7 12px, transparent 12px);
+.carousel.top-scrollbar {
+  --content-padding: 15px 0 0 0;
+}
+.carousel.both-scrollbars {
+  --content-padding: 15px 0;
+}
+.carousel::part(scrollbar-track) {
+  background-color: #f3f2f1;
+  border-radius: 0;
 }
 .carousel-track {
   display: grid;
@@ -79,7 +84,7 @@ scrollable-component {
 .carousel-item {
   width: 250px;
   height: 250px;
-  background-color: #f9f8f7;
+  background-color: #f3f2f1;
   font-size: 1.5rem;
   line-height: 250px;
   text-align: center;
@@ -204,7 +209,7 @@ scrollable-component {
   --scrollbar-padding: 0;
   --content-padding: 0 0 25px 0;
   scroll-snap-type: x mandatory;
-  background: linear-gradient(to top, #f9f8f7 12px, transparent 12px);
+  background: linear-gradient(to top, #f3f2f1 12px, transparent 12px);
   overflow-y: hidden;
   overflow-x: auto;
 }
@@ -218,7 +223,7 @@ scrollable-component {
   scroll-snap-stop: always;
   width: calc(var(--viewport-width) - 120px);
   height: 250px;
-  background-color: #f9f8f7;
+  background-color: #f3f2f1;
   font-size: 1.5rem;
   line-height: 250px;
   text-align: center;
@@ -226,7 +231,7 @@ scrollable-component {
 
 .text-ellipsis {
   max-height: 300px;
-  background-color: #f9f8f7;
+  background-color: #f3f2f1;
   border-radius: 8px;
   overflow-x: hidden;
 }
@@ -234,6 +239,21 @@ scrollable-component {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.multiple-scrollbar-examples {
+  grid-column: 1 / span 2;
+}
+.multiple-scrollbar-examples .example {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 660px));
+  grid-gap: 30px;
+}
+@media (max-width: 960px) {
+  .multiple-scrollbar-examples .example {
+    display: block;
+  }
+}
+
 
 .custom-1 {
   --scrollbar-width: 20px;
@@ -253,7 +273,7 @@ scrollable-component {
   box-shadow: 0 0 0 2.1px #ff0000 inset;
 }
 .custom-2::part(scrollbar-thumb) {
-  box-shadow: 0 0 0 2.1px #f9f8f7;
+  box-shadow: 0 0 0 2.1px #f3f2f1;
 }
 .custom-3 {
   border-radius: 0;
@@ -277,7 +297,7 @@ scrollable-component {
   --scrollbar-thumb-fill-color-hover: #e6a722;
 }
 .custom-4::part(scrollbar-track) {
-  box-shadow: 0 0 0 4px #f9f8f7 inset, 4px 5px 3px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 0 0 4px #f3f2f1 inset, 4px 5px 3px rgba(0, 0, 0, 0.2) inset;
 }
 .custom-4::part(scrollbar-thumb) {
   background-image: url(/img/drag.svg);
@@ -421,4 +441,60 @@ scrollable-component {
 .custom-11.bottom-overflow::part(scrollbar-thumb):after {
   opacity: 1;
   transform: rotate(180deg) translateY(0);
+}
+.custom-12 {
+  --scrollbar-width: 17px;
+}
+.custom-12::part(left scrollbar) {
+  --scrollbar-thumb-fill-color: #3b97ff;
+  --scrollbar-thumb-fill-color-hover: #0366d6;
+  --scrollbar-thumb-fill-color-active: #004492;
+  border-right: 1px solid #dfdfdf;
+}
+.custom-12::part(right scrollbar) {
+  --scrollbar-thumb-fill-color: #ff0000;
+  --scrollbar-thumb-fill-color-hover: #cc0000;
+  --scrollbar-thumb-fill-color-active: #8c0000;
+  border-left: 1px solid #dfdfdf;
+}
+.custom-13::part(top scrollbar) {
+  --scrollbar-thumb-fill-color: #3b97ff;
+  --scrollbar-thumb-fill-color-hover: #0366d6;
+  --scrollbar-thumb-fill-color-active: #004492;
+}
+.custom-13::part(bottom scrollbar) {
+  --scrollbar-thumb-fill-color: #ff0000;
+  --scrollbar-thumb-fill-color-hover: #cc0000;
+  --scrollbar-thumb-fill-color-active: #8c0000;
+}
+
+.custom-14::part(scrollbar) {
+  background-color: #ddd;
+  padding: 0;
+}
+.custom-14::part(left scrollbar) {
+  --scrollbar-thumb-fill-color: #55b529;
+  --scrollbar-thumb-fill-color-hover: #428f1f;
+  --scrollbar-thumb-fill-color-active: #2c6113;
+}
+.custom-14::part(right scrollbar) {
+  --scrollbar-thumb-fill-color: #ffaa00;
+  --scrollbar-thumb-fill-color-hover: #d99100;
+  --scrollbar-thumb-fill-color-active: #b97c00;
+}
+.custom-14::part(top scrollbar) {
+  --scrollbar-thumb-fill-color: #3b97ff;
+  --scrollbar-thumb-fill-color-hover: #0366d6;
+  --scrollbar-thumb-fill-color-active: #004492;
+}
+.custom-14::part(bottom scrollbar) {
+  --scrollbar-thumb-fill-color: #ff0000;
+  --scrollbar-thumb-fill-color-hover: #cc0000;
+  --scrollbar-thumb-fill-color-active: #8c0000;
+}
+.custom-14::part(vertical scrollbar-track) {
+  padding: 16px 2px;
+}
+.custom-14::part(horizontal scrollbar-track) {
+  padding: 2px 16px;
 }
