@@ -290,20 +290,47 @@ scrollable-component {
   box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.8) inset, -2px -2px 3px rgba(0, 0, 0, 0.1) inset
 }
 .custom-4 {
-  --scrollbar-width: 20px;
+  --scrollbar-width: 24px;
   --scrollbar-track-fill-color: rgba(0, 0, 0, 0.1);
   --scrollbar-track-fill-color-hover: rgba(0, 0, 0, 0.16);
-  --scrollbar-thumb-fill-color: #efb436;
-  --scrollbar-thumb-fill-color-hover: #e6a722;
+}
+.custom-4::part(scrollbar) {
+  /* box-shadow: 0 0 0 4px #f3f2f1 inset, 4px 5px 3px rgba(0, 0, 0, 0.2) inset; */
+  padding: 8px;
 }
 .custom-4::part(scrollbar-track) {
-  box-shadow: 0 0 0 4px #f3f2f1 inset, 4px 5px 3px rgba(0, 0, 0, 0.2) inset;
+  position: relative;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
+}
+.custom-4::part(scrollbar-track):before {
+  content: '';
+  display: block;
+  position: absolute;
+  inset: -4px;
 }
 .custom-4::part(scrollbar-thumb) {
+  position: relative;
+  background: transparent;
+}
+.custom-4::part(scrollbar-thumb):before {
+  content: '';
+  display: block;
+  position: absolute;
+  inset: -4px;
   background-image: url(/img/drag.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 16px 14px;
+  border-radius: 8px;
+  background-color: #efb436;
+  border: 1px solid #efb436;
+  transition: all var(--fill-color-transition-duration) ease-out;
+}
+.custom-4::part(scrollbar-thumb):hover:before {
+  background-color: #e6a722;
+}
+.custom-4::part(scrollbar-thumb active):before {
+  border-color: #5f4816;
 }
 .custom-5 {
   border-radius: 0;
@@ -375,18 +402,19 @@ scrollable-component {
 }
 .custom-10 {
   --scrollbar-width: 20px;
-  --scrollbar-thumb-fill-color: rgba(0, 0, 0, 0.1);
+  --scrollbar-thumb-fill-color: rgba(0, 0, 0, 0.08);
   --scrollbar-thumb-fill-color-hover: var(--scrollbar-thumb-fill-color);
 }
 .custom-10::part(scrollbar-track) {
-  background-image: radial-gradient(circle at center, #ddd 1px, transparent 2px);
+  background-image: radial-gradient(circle at center, #ccc 2px, transparent 3px);
   background-position: center center;
   background-repeat: repeat-y;
-  background-size: 16px 8px;
+  background-size: 14px 14px;
 }
 .custom-10::part(scrollbar-thumb) {
   border: solid #888;
   border-width: 4px 1px 4px 1px;
+  backdrop-filter: blur(2px);
 }
 .custom-11 {
   max-height: 380px;
